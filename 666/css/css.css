@@ -1,0 +1,59 @@
+clearfix::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+body{
+	background-image: url("../img/banner.jpg");
+}
+header .logo{
+	float: left;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	padding: 30px 10px;
+	background-color:darkgray;
+	}
+header.on{
+	padding: 5px 0px;
+	background-color:rgba(0,0,0,.8);
+}
+.topMenu ul li a{
+	padding:5 0px;
+    margin: 50px 30px;
+}
+header .topMenu{
+	float: right;
+}
+ul{
+	list-style-type: none;
+	padding: 0px;
+}
+
+
+.container ul li{
+	float: left;
+	margin: 10px 50px;
+	color: aliceblue;
+}
+header .topMenu{
+	float: right;
+}
+ .topMenu ul li{
+	float: left;
+	margin: 10px 50px;
+}
+header ul li a{
+	color: darkblue;
+	font-size: 20px;
+	margin: 10px 0px;
+}
+.banner .text h1{
+	text-align: center;
+}
+.banner .text h1 strong{
+	color: #339BEB;
+}
+.topMenu ul li a{
+	margin: 10px 10px;
+}
