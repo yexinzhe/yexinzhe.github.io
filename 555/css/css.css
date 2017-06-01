@@ -1,0 +1,36 @@
+clearfix::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+header .logo{
+	float: left;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	padding: 40px 20px;
+	background-color:dimgray;
+	}
+.topMenu ul li a{
+	padding:5 0px;
+    margin: 50px 30px;
+}
+header .topMenu{
+	float: right;
+}
+ul{
+	list-style-type: none;
+	padding: 0px;
+}
+
+
+.container ul li{
+	float: left;
+	margin: 50px 20px;
+	color: aliceblue;
+}
+
+header ul li a{
+	color: black;
+	font-size: 20px;
+}
