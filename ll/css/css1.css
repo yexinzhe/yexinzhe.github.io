@@ -1,0 +1,13 @@
+ body{
+    background: url(../img/001.jpg);
+  }
+  h1{
+    text-align: center;
+    color:purple;
+  }
+  p{
+    text-indent: 2em;
+    line-height: 1.5em;
+    color:antiquewhite;
+  }
+ 
