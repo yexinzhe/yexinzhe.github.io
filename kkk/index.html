@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			h1{
+			font-size:3em;
+			text-align: center;
+		    }
+			.r{
+				text-align:center;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>点点游戏</h1>
+		<div class="r">
+			<input type="button" value="1"  style="width:100px;height:50px; "/>
+			<input type="button" value="2"  style="width:100px;height:50px;"/>
+			<input type="button" value="3"  style="width:100px;height:50px;"/>
+			<input type="button" value="4"  style="width:100px;height:50px;"/>
+			<input type="button" value="5"  style="width:100px;height:50px;"/>
+		
+		</div>
+		<script type="text/javascript">
+			var oBtnList=document.querySelectorAll(".r input");
+			
+			
+          for ( var i = 0; i < oBtnList.length; i++ ) {
+				oBtnList[ i ].addEventListener("click",(function(index){
+					return function(e){
+				console.log( '你点击了第' + index +"个按钮" )};
+				 alert('你点击了'+index+"按钮");
+				}(i+1)));
+			}
+             
+
+
+		</script>
+	</body>
+</html>
