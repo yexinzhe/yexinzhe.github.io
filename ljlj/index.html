@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> 
+<head>
+		<meta charset="utf-8" />
+		<title>鼠标事件和键盘事件</title>
+		
+<script type="text/javascript" class="v"> 
+function whichButton(event) 
+{ 
+alert(event.keyCode) 
+} 
+function whichButton(event) 
+{ 
+if (event.button==2) 
+{ 
+alert("你点击了鼠标右键!") 
+} 
+else 
+{ 
+alert("你点击了鼠标左键!") 
+} 
+} 
+</script> 
+</head> 
+
+<body onmousedown="whichButton(event)"> 
+<p>请单击你鼠标的左键或右键试试</p> 
+</script> 
+</head> 
+
+<body onkeyup="whichButton(event)"> 
+<p>在此文档中按下你键盘上的某个键看看</p> 
+</body> 
+</html> 
