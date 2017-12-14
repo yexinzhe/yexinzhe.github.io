@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-image: url(img/1.jpg);
+				background-size: 100%;
+			}
+			.menuContainer {
+				border: 1.5px dashed black;
+				width: 300px;
+				
+				padding: 3px 2px 2px 10px;
+			}
+			
+			.menu {
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+			}
+			
+			.menu li {
+				list-style-type: none;
+				font-size: 15px;
+				line-height: 24px;
+				color: gold;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="menuContainer">
+			<ul class="menu">
+				<li>轻轻的我走了,正如我轻轻的来；</li>
+				<li>我轻轻的招手,作别西天的云彩。</li>
+				<li>那河畔的金柳,是夕阳中的新娘；</li>
+				<li>波光里的艳影,在我的心头荡漾。</li>
+				<li>软泥上的青荇,油油的在水底招摇⑵；</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var oMenu = document.querySelector('.menu');
+			var oMenuItme = document.querySelectorAll('.menu li');
+			oMenu.style.height = '48px';
+			oMenu.innerHTML += oMenu.innerHTML;
+
+			function run() {
+				if(oMenu.scrollTop > 108) {
+					oMenu.scrollTop = 1;
+					setTimeout(run, 100);
+				} 
+				else {
+					oMenu.scrollTop++;
+					if(oMenu.scrollTop % 36 == 0)
+						setTimeout(run, 1000);
+					else
+						setTimeout(run, 100);
+				}
+				console.log(oMenu.scrollTop)
+			}
+			run();
+		</script>
+	</body>
+
+</html>
